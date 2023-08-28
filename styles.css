@@ -36,7 +36,6 @@ footer {
 }
 .linkedin-button {
     display: inline-block;
-    background-color: #0077B5;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -44,7 +43,7 @@ footer {
     transition: background-color 0.3s ease;
 }
 .linkedin-button:hover {
-    background-color: #005F8D;
+    background-color: #333;
 }
 .linkedin-logo {
     width: 20px;
