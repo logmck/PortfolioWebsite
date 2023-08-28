@@ -6,8 +6,8 @@ body {
 }
 header {
     background-color: #333;
+    text-align: left;
     color: #fff;
-    text-align: center;
     padding: 2em 0;
 }
 nav {
@@ -45,9 +45,9 @@ footer {
 .linkedin-button:hover {
     background-color: #333;
 }
-.linkedin-logo {
-    width: 20px;
-    height: 20px;
+.linkedinimage {
+    width: 75px;
+    height: 75px;
     vertical-align: middle;
     margin-right: 5px;
 }
