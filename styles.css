@@ -1,53 +1,192 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
+
+/* Set up font and color palette */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333; /* Neutral text color */
+    background-color: #f4f4f4; /* Neutral background color */
+}
+
+/* Header styles */
 header {
-    background-color: #333;
-    text-align: left;
+    background-color: #555;
     color: #fff;
-    padding: 2em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 nav {
     display: flex;
-    justify-content: center;
-    background-color: #444;
-    padding: 0.5em 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
-nav a {
-    color: #fff;
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
-    margin: 0 1em;
-    transition: color 0.3s ease;
+    color: #fff;
 }
-nav a:hover {
-    color: #66c2ff;
+
+/* Hero section styles */
+.hero {
+    background-color: #f4f4f4;
+    padding: 100px 0;
 }
-section {
-    padding: 2em;
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-footer {
-    text-align: center;
+
+.hero-text {
+    flex: 1; /* Take up available space */
+    padding: 200px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1; /* Take up available space */
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.cta-button {
+    display: inline-block;
     background-color: #333;
     color: #fff;
-    padding: 1em 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
 }
-.linkedin-button {
+
+.about, .contact {
+    padding: 80px 0;
+    margin-right: 5px;
+
+}
+
+.about h2, .contact h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
     display: inline-block;
+    background-color: #333;
     color: #fff;
     padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.linkedin-button {
+    display: inline-flex; /* Use inline-flex for alignment */
+    align-items: center; /* Align items vertically */
+    vertical-align: middle;
+    color: #fff;
+    padding: 10px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
+
 .linkedin-button:hover {
     background-color: #333;
 }
+
 .linkedinimage {
-    width: 75px;
-    height: 75px;
-    vertical-align: middle;
+    width: 30px;
+    height: 30px;
     margin-right: 5px;
+    border-radius: 10%;
 }
+
+.emailimage {
+    width: 40px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 10%;
+}
+
+/* Loading screen styles */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Place loading screen on top */
+}
+
+.loading-text {
+    font-size: 24px;
+    display: flex;
+    gap: 8px; /* Space between letters */
+}
+
+.loading-text span {
+    display: inline-block;
+    animation: hop 1s alternate infinite;
+}
+
+/* Content styles */
+.content {
+    display: none; /* Hide content until loading is complete */
+}
+
+/* Hop animation keyframes */
+@keyframes hop {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+

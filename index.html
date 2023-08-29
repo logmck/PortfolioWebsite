@@ -3,46 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logan McKinley</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Your Portfolio</title>
 </head>
 <body>
+    <div class="loading-screen">
+        <div class="loading-text">
+            <span>L</span>
+            <span>o</span>
+            <span>a</span>
+            <span>d</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+        </div>
+    </div>
     <header>
-        <h1>Logan McKinley</h1>
-        <p></p>
-        <a class="linkedin-button" href="https://www.linkedin.com/in/logan-mckinley-822307138/" target="_blank">
-            <img class="linkedinimage" src="linkedinimage.png" alt="LinkedIn Logo">
-        </a>
+        <nav>
+            <div class="logo">Logan McKinley</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself here.</p>
-    </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div>
-            <!-- Add your project thumbnails and descriptions here -->
-            <div>
-                <img src="project1.jpg" alt="Project 1">
-                <p>Project 1 description.</p>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Logan McKinley</h1>
+                <p>Techincal Support Engineer 2</p>
+                <a class="linkedin-button" href="https://www.linkedin.com/in/logan-mckinley-822307138/" target="_blank">
+                    <img class="linkedinimage" src="linkedinimage.png" alt="LinkedIn Logo">
+                </a>
             </div>
-            <div>
-                <img src="project2.jpg" alt="Project 2">
-                <p>Project 2 description.</p>
+            <div class="hero-image">
+                <img src="me2.jpg" alt="Hero Image">
             </div>
         </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+
+    <section class="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>We are a team of experts dedicated to delivering top-notch solutions to our clients. With years of experience...</p>
+        </div>
     </section>
+
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p></p>
+        <a class="email-button" target="_blank">
+            <img class="emailimage" src="email.jpg" alt="email Logo">
+        </a>
+    </section>
+
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
     </footer>
+    <script>
+        // Simulate content loading delay
+        window.onload = function() {
+            document.querySelector('.loading-screen').style.display = 'none';
+            document.querySelector('.content').style.display = 'block';
+        };
+    </script>
 </body>
 </html>
+
